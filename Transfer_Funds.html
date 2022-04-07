@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>About Us - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/currency.compiled.css">
+    <link rel="stylesheet" href="assets/css/Features-Clean.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.compiled.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.compiled.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.compiled.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.compiled.css">
+</head>
+
+<body><nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container"><a class="navbar-brand logo" href="#">E-Banking</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div id="navcol-1" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="Login.html">Home</a><a class="nav-link" href="Register.html">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="Account_Balance.html">ACCOUNT BALANCE</a></li>
+                <li class="nav-item"><a class="nav-link" href="Transfer_Funds.html">Transfer Funds</a></li>
+                <li class="nav-item"><a class="nav-link" href="Make_Payment.html">Make Payment</a></li>
+                <li class="nav-item"><a class="nav-link" href="Print_Transaction_Statement.html">Print Transaction Statement</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact_Us.html">Contact Us</a></li>
+            </ul><a href="Login.html"><button class="btn btn-primary" type="button"> Log Out </button></a>
+        </div>
+    </div>
+</nav>
+
+
+    <main class="page">
+        <section class="d-table clean-block about-us">
+            <div class="container"><div class="row justify-content-center">
+    <div class="col fs-6 fw-bold">
+        <br></br>
+        <h1><strong>Transfer Funds</strong></h1>
+
+        <p><strong><span style="text-decoration: underline;">FROM</span></strong></p>
+        <div class="mb-3"><select id="myTransfer" class="form-control">
+                <optgroup label="Select Account From">
+                    <option value="Current Account (GBP)">Current Account (GBP) £200.00</option>
+                    <option value="Current Account (EUR) €240.00">Current Account (EUR) €240.00</option>
+                    <option value="Current Account (USD) $264.04">Current Account (USD) $264.04</option>
+                    <option value="Savings Account (GBP) £10000.00">Savings Account (GBP) £10000.00</option>
+                    <option value="Savings Account (EUR) €12009.28">Savings Account (EUR) €12009.28</option>
+                    <option value="Savings Account (USD) $13190.49">Savings Account (USD) $13190.49</option>
+                </optgroup>
+            
+            </select></div>
+    <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">From</span>
+                        </div>
+                        <select class="form-control from" id="sel1">
+                            <option value="">Select One …</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+                </div>
+        <p><strong><span style="text-decoration: underline;">TO</span></strong></p>
+        <div class="mb-3"><select id="myTransfer" class="form-control">
+                <optgroup label="Select Account To">
+                    <option value="Current Account (GBP)">Current Account (GBP) £200.00</option>
+                    <option value="Current Account (EUR) €240.00">Current Account (EUR) €240.00</option>
+                    <option value="Current Account (USD) $264.04">Current Account (USD) $264.04</option>
+                    <option value="Savings Account (GBP) £10000.00" selected>Savings Account (GBP) £10000.00</option>
+                    <option value="Savings Account (EUR) €12009.28">Savings Account (EUR) €12009.28</option>
+                    <option value="Savings Account (USD) $13190.49">Savings Account (USD) $13190.49</option>
+                </optgroup>
+            </select></div>
+       
+  
+                
+    
+  
+    </div>
+</div>
+</div><label class="form-label"><strong>Enter Amount </strong></label>
+<div class="mb-3">
+    <input class="form-control" type="number" name="£" placeholder="£"
+</div>
+    <br></br>
+
+<!---code from https://www.geeksforgeeks.org/currency-converter-in-javascript--->
+<div class="main">
+  
+            <div class="form-group">
+                <label for="oamount">
+                    Amount to Convert : 
+                </label>
+                <input type="text" 
+                       class="form-control searchBox" 
+                       placeholder="0.00" 
+                       id="oamount">
+            </div>
+    <br></br>
+
+<div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">To</span>
+                        </div>
+                        <select class="form-control to" id="sel2">
+                            <option value="">Select One …</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="text-center">
+  
+                <!-- convert button -->
+                <button class="btn btn-primary convert m-2" 
+                        type="submit">
+                     Convert
+              </button>
+  
+                <!-- reset button -->
+                <button class="btn btn-primary m-2" 
+                        onclick="clearVal()">
+                   Reset
+              </button>
+            </div>
+  
+        </div>
+  
+        <div id="finalAmount" class="text-center">
+  
+            <!-- Display the converted amount -->
+            <h2>Converted Amount :
+                <span class="finalValue" 
+                      style="color:green;">
+           </span>
+            </h2>
+        </div>
+    </div>
+                       
+<br></br>
+<div>
+    <div id="finalAmount" class="text-center">
+  
+            <!-- Display the converted amount -->
+            <h2>Converted Amount :
+                <span class="finalValue" 
+                      style="color:green;">
+           </span>
+            </h2>
+        </div>
+</div>
+
+<p class="fs-6 fw-bold">
+    <strong>Payment Date</strong
+</p>
+<div>
+    <input type="date" />
+</div>
+<br></br>
+<button id="continue" class="btn btn-primary" type="submit">Make Payment</button>
+<p id="payment_successful"></p>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Accounts</h5>
+                    <ul></ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Pay &amp; Transfer</h5>
+                    <ul></ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Log Out</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2022 Copyright Text</p>
+        </div>
+    </footer><button class="btn btn-primary d-block w-100" type="submit">Log In</button><label class="form-label"><strong>Enter Amount&nbsp;</strong></label>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/contact-us.js"></script>
+    <script src="assets/js/currency.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
